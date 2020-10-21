@@ -12,19 +12,10 @@ function AudioPlayer() {
     <PlayerState>
       <div className="main">
 
-         <Controls />
-        <div className="">
-
-          <div className="">
+            <Controls />
             <Header />
-
-          </div>
-        
-        </div>
-        <div className="">
-
             <Playlist />
-          </div>
+      
       </div>
     </PlayerState>
   )
