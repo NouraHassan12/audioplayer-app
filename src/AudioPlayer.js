@@ -12,7 +12,7 @@ function AudioPlayer() {
   return (
     <PlayerState>
       <div className="main">
-        <Searchbar />
+        {/* <Searchbar /> */}
          <Controls />
         <div className="">
 
