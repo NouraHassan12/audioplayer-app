@@ -13,7 +13,7 @@ function AudioPlayer() {
       <div className="main">
 
             <Controls />
-            <Header />
+            {/* <Header /> */}
             <Playlist />
       
       </div>

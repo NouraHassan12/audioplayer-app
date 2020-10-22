@@ -1,5 +1,6 @@
 import React, { useContext ,useState ,useEffect} from 'react'
 import playerContext from '../Context/playerContext';
+import { songsArr } from '../Context/songs';
 
 
 function Playlist() {
@@ -9,9 +10,6 @@ function Playlist() {
   const [filterData, setSearchResults] = useState([]);
 
   
-  const DeleteSong=()=>{
-    songs.filter((song,i) => song.i !== i)
-  }
 
 
 
@@ -29,7 +27,7 @@ function Playlist() {
       song[0].toLowerCase().includes(searchTerm)
     );
     setSearchResults(results);
-  }, [searchTerm ]);
+  }, [searchTerm, ]);
 
   return (
     <div className="playlist">
@@ -64,9 +62,7 @@ function Playlist() {
           
            <p className="song">  <i className="fas fa-music"></i>  {song[0]} -  {song[2]}
                </p>
-               <button className="deletebtn" onClick={
-           DeleteSong(i)
-            }>x</button>
+           
        
         
           
